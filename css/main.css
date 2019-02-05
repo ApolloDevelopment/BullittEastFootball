@@ -94,8 +94,21 @@
   left: 50%;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
-  width: 508px;
+  width: 50%;
 }
+
+.motto .color {
+  font-size: 150%;
+}
+
+.motto .red .color {
+  color: #B70F0F;
+}
+
+.motto .gold .color {
+  color: #ffd263;
+}
+
 
 .motto .gold {
   text-align: right;
