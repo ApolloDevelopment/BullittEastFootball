@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); /* font-family: 'Montserrat', sans-serif;   (More formal Raleway)  */
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.2s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#top-section {
+  width: 100%;
+  height: 100vh;
+  color: #f9f9f9;
+}
+
+.navbar {
+  background-color: #282828;
+}
+
+.navbar img {
+  width: 93px;
+  height: 54px;
+  vertical-align: bottom;
+}
+
+.navbar span {
+  font-size: 32px;
+  cursor: default;
+  width: 45%;
+}
+
+.navbar img::selection, .navbar span::selection {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#blur {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/Cover-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+#filter {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(183, 15, 15, 0.3);
+}
+
+.relative {
+  position: relative;
+}
+
+.content {
+  padding: 2.5% 0%;
+}
+
+.nav {
+  text-align: right;
+  justify-content: flex-end;
+  width: 55%;
+}
+
+.nav li {
+  margin: 0px 15px;
+}
+
+.nav li a {
+  color: #f9f9f9;
+  font-size: 1.25rem;
+}
+
+.nav li a.active {
+  color: #ffd263;
+}
+
+.nav li a.active:hover {
+  color: #ffd263;
+}
+
+.nav li a:hover {
+  text-decoration: none;
+  color: #ffd263;
+}
+
+.motto {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 508px;
+}
+
+.motto .gold {
+  text-align: right;
+}
+
+
+
+@media(max-width:992px) {
+  .nav {
+    width: 45%
+  }
+}
+
+@media(max-width:968px) {
+  .nav {
+    width: 40%;
+  }
+
+  .nav li {
+    margin: 0px 7.5px;
+  }
+}
+
+@media(max-width: 925px) {
+
+  .navbar {
+    text-align: center;
+    display: block;
+  }
+
+  .navbar span, .nav {
+    width: 100%;
+  }
+
+  .nav {
+    display: inline-flex;
+    width: auto;
+    margin: 0 auto;
+  }
+
+}
+
+@media(max-width:864px) {
+  .nav li a {
+    font-size: 1rem;
+  }
+}

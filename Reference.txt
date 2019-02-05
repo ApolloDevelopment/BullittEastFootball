@@ -1,0 +1,3 @@
+-- Colors --
+Red: #B70F0F
+Gold: #FFFF00
