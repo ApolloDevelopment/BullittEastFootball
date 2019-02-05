@@ -94,8 +94,8 @@
   left: 50%;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
-  width: 50%;
-}
+  width: 550px;
+} /* Add breaking point for width at 646px */
 
 .motto .color {
   font-size: 150%;
