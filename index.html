@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" onscroll="scrollHandler()">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="icon" href="img/favicon.ico">
   <title>Charger Football | Home</title>
 </head>
-<body onscroll="scrollHandler()">
-  <div id="blur"></div>
-  <div id="filter"></div>
+<body>
   <div id="top-section" class="relative">
+      <div id="blur"></div>
+      <div id="filter"></div>
+      <!--
+        Menu Icon: <i class="fas fa-bars"></i>
+        Menu Close: <i class="fas fa-window-close"></i>
+    -->
       <nav class="navbar navbar-expand-lg fixed-top">
-        <span class="navbar-brand"><img src="img/ChargerHead-Red_155x90.png"></img> Bullitt East Football</span>
+        <button id="toggleNav" type="button" class="btn btn-dark"><i class="fas fa-bars"></i></button>
+        <span class="navbar-brand"><img src="img/ChargerHead-Red_155x90.png"></img> <br class="hidden" />Bullitt East Football</span>
         <ul class="nav">
+          <li class="nav-item">
+            <a class="active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Roster</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Schedule</a>
+          </li>
+        </ul>
+        <!-- secondary navigation (for mobile) -->
+        <ul class="nav2">
           <li class="nav-item">
             <a class="active" href="#">Home</a>
           </li>
@@ -33,8 +54,8 @@
 
     <div class="container">
       <div class="motto relative">
-        <h3 class="red"><span clas="color">Red<span> is the new <em><span clas="color">fast<span></em></h3>
-        <h3 class="gold"><span clas="color">Gold<span> is the new <em><span class="color">standard</span></h3>
+        <h3 class="red"><span class="color">Red</span> is the new <span class="color">fast</span></h3>
+        <h3 class="gold"><span class="color">Gold</span> is the new <span class="color">standard</span></h3>
       </div>
     </div>
   </div>
@@ -44,9 +65,13 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe facilis aliquam voluptatem error dolorum tempora nisi asperiores qui reiciendis doloribus fuga molestiae, repellat eligendi et, consectetur officiis obcaecati possimus quas. Tempora culpa, iusto. Saepe inventore esse officiis iusto maxime. Obcaecati dolor impedit eveniet ab, accusantium sint minus eos. Doloremque.
       </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem saepe facilis aliquam voluptatem error dolorum tempora nisi asperiores qui reiciendis doloribus fuga molestiae, repellat eligendi et, consectetur officiis obcaecati possimus quas. Tempora culpa, iusto. Saepe inventore esse officiis iusto maxime. Obcaecati dolor impedit eveniet ab, accusantium sint minus eos. Doloremque.
+      </p>
     </div>
   </div>
 
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/UI_Main.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </body>

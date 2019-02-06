@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  transition: 0.2s;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,6 +14,13 @@
 
 .navbar {
   background-color: #282828;
+}
+
+.navbar button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: none;
 }
 
 .navbar img {
@@ -33,6 +39,10 @@
   background-color: rgba(255, 255, 255, 0);
 }
 
+br.hidden {
+  display: none;
+}
+
 #blur {
   position: absolute;
   width: 100%;
@@ -42,6 +52,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
   filter: blur(3px);
   -webkit-filter: blur(3px);
 }
@@ -71,20 +82,21 @@
   margin: 0px 15px;
 }
 
-.nav li a {
+li a {
   color: #f9f9f9;
   font-size: 1.25rem;
+  transition: 0.2s;
 }
 
-.nav li a.active {
+li a.active {
   color: #ffd263;
 }
 
-.nav li a.active:hover {
+li a.active:hover {
   color: #ffd263;
 }
 
-.nav li a:hover {
+li a:hover {
   text-decoration: none;
   color: #ffd263;
 }
@@ -94,18 +106,85 @@
   left: 50%;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
-  width: 508px;
+  width: 550px;
+  transition: 0.2s;
+} /* Add breaking point for width at 646px */
+@media(max-width:645px){
+  .motto{
+    width:500px;
+  }
+  .motto h3 {
+    font-size: 1.5em;
+  }
 }
+@media(max-width:525px){
+  .motto{
+    width:400px;
+  }
+  .motto h3{
+    font-size:1.25em;
+  }
+}
+
+.motto .color {
+  font-size: 150%;
+}
+
+.motto .red .color {
+  color: #FF0000;
+}
+
+.motto .gold .color {
+  color: #ffd263;
+}
+
 
 .motto .gold {
   text-align: right;
 }
 
+.nav2 {
+  display: none;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
 
+.nav2 li {
+  margin: 0;
+  padding: 5px 0px;
+  width: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.nav2 li:hover {
+  background-color: #191919;
+  curosr
+}
+
+/* Media query for nav button and navigation change */
+@media(max-width:446px){
+  br.hidden {
+    display: block;
+  }
+  .navbar button{
+    display: block;
+  }
+  .navbar span {
+    margin: auto;
+  }
+  .nav {
+    display: none !important;
+  }
+  li a {
+    font-size: 1.5rem !important;
+  }
+}
 
 @media(max-width:992px) {
   .nav {
-    width: 45%
+    width: 45%;
   }
 }
 
@@ -139,7 +218,7 @@
 }
 
 @media(max-width:864px) {
-  .nav li a {
+  li a {
     font-size: 1rem;
   }
 }
