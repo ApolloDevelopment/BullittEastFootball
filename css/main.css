@@ -125,7 +125,6 @@ li a:hover {
     font-size:1.25em;
   }
 }
-} /* Add breaking point for width at 646px */
 
 .motto .color {
   font-size: 150%;
@@ -138,11 +137,6 @@ li a:hover {
 .motto .gold .color {
   color: #ffd263;
 }
-
-.motto .gold .color {
-  color: #ffd263;
-}
-
 
 .motto .gold {
   text-align: right;
