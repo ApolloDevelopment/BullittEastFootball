@@ -96,9 +96,16 @@ li a.active:hover {
   color: #ffd263;
 }
 
+/* NEWLY ADDED */
+.nav li:hover {
+  color: #ffd263;
+  
+}
+
+/* CHANGE COLOR BACK TO DEFAULT YELLOW IF SOMETHING SEEMS WRONG */
 li a:hover {
   text-decoration: none;
-  color: #ffd263;
+  color: inherit;
 }
 
 .motto {
