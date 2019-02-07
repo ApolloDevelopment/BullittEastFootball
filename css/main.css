@@ -18,7 +18,7 @@
 
 .navbar button {
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 10px;
   display: none;
 }
@@ -195,6 +195,11 @@ li a:hover {
   }
   .navbar span {
     margin: auto;
+    line-height: 80%;
+  }
+  .navbar img {
+    width: 85.25px;
+    height: 49.5px;
   }
   .nav {
     display: none !important;
